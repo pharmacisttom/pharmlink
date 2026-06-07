@@ -1,2 +1,2 @@
 # pharmlink
-PharmaCare system with HIS integration.
+Pharmalink system with HIS integration.

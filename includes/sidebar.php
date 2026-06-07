@@ -4,7 +4,7 @@
     <div class="h-16 flex items-center px-6 bg-slate-950 border-b border-slate-800">
         <div class="flex items-center gap-3">
             <div class="w-8 h-8 bg-indigo-500 rounded-lg flex items-center justify-center text-white font-bold text-lg shadow-inner">P</div>
-            <span class="font-bold text-xl tracking-wide">PharmaCare</span>
+            <span class="font-bold text-xl tracking-wide">Pharmalink</span>
         </div>
     </div>
 
@@ -13,6 +13,7 @@
         <p class="px-2 text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">ระบบหลัก</p>
         
         <?php 
+        require_once __DIR__ . '/../api/config.php';
         $current_page = basename($_SERVER['PHP_SELF']); 
         ?>
         

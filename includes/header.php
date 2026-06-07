@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PharmaCare Dashboard</title>
+    <title>Pharmalink Dashboard</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -47,14 +47,14 @@ $hide_sidebar = isset($hide_sidebar) ? $hide_sidebar : false;
                     <!-- Mobile Logo -->
                     <div class="md:hidden font-bold text-lg text-slate-800 flex items-center gap-2">
                         <div class="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-bold shadow-inner">P</div>
-                        PharmaCare
+                        Pharmalink
                     </div>
                 <?php endif; ?>
                 
                 <?php if ($hide_sidebar): ?>
                     <!-- ถ้าซ่อน Sidebar ให้แสดง Logo เล็กๆ ที่ Header แทน -->
                     <div class="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-inner">P</div>
-                    <span class="font-bold text-xl text-slate-800 hidden sm:inline">PharmaCare</span>
+                    <span class="font-bold text-xl text-slate-800 hidden sm:inline">Pharmalink</span>
                 <?php endif; ?>
             </div>
             
