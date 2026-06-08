@@ -20,10 +20,11 @@ require_once 'includes/header.php';
     .tab-btn { border-bottom: 2px solid transparent; }
     .tab-btn.active { border-bottom-color: #4f46e5; color: #4f46e5; font-weight: 600; }
 </style>
-<body class="bg-slate-50 min-h-screen pb-12">
-    
-    <nav class="bg-gradient-to-r from-blue-700 to-indigo-800 text-white shadow-md sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+
+<div class="pb-12">
+    <!-- Title Bar (Stretched to edges using negative margins) -->
+    <nav class="bg-gradient-to-r from-blue-700 to-indigo-800 text-white shadow-md -mx-4 sm:-mx-6 -mt-4 sm:-mt-6 mb-6">
+        <div class="w-full px-4 sm:px-6 lg:px-8 py-6">
             <div class="flex justify-between items-center">
                 <div>
                     <h1 class="text-2xl font-bold tracking-tight">ประวัติผู้ป่วย (Patient Profile)</h1>
@@ -39,7 +40,7 @@ require_once 'includes/header.php';
         </div>
     </nav>
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+    <div class="w-full">
         
         <!-- Tabs Header -->
         <div class="bg-white rounded-t-2xl shadow-sm border border-slate-200 border-b-0 flex overflow-x-auto">
@@ -189,6 +190,7 @@ require_once 'includes/header.php';
 
         </div>
     </div>
+</div>
 
     <script>
         const hn = '<?php echo $hn; ?>';
@@ -312,5 +314,4 @@ require_once 'includes/header.php';
 
         window.onload = loadData;
     </script>
-</body>
-</html>
+<?php require_once 'includes/footer.php'; ?>

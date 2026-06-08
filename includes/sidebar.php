@@ -29,6 +29,17 @@
             <span class="font-medium">แดชบอร์ดสรุปผล</span>
         </a>
 
+        <?php if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin'): ?>
+        <div class="pt-4 pb-2">
+            <p class="px-2 text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">การจัดการระบบ</p>
+        </div>
+        <!-- Menu 3: จัดการผู้ใช้งาน -->
+        <a href="admin_users.php" class="flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200 group <?php echo $current_page == 'admin_users.php' ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-300 hover:bg-slate-800 hover:text-white'; ?>">
+            <i class="fa-solid fa-users-gear text-lg <?php echo $current_page == 'admin_users.php' ? 'text-white' : 'text-slate-400 group-hover:text-indigo-400'; ?>"></i>
+            <span class="font-medium">จัดการผู้ใช้งาน</span>
+        </a>
+        <?php endif; ?>
+
     </nav>
 
     <!-- Bottom Sidebar Info -->

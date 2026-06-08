@@ -95,7 +95,7 @@ if ($action === 'logout') {
     session_unset();
     session_destroy();
 
-    echo json_encode(['success' => true, 'message' => 'ออกจากระบบสำเร็จ']);
+    header("Location: ../login.php");
     exit();
 }
 
